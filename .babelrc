@@ -1,0 +1,29 @@
+{
+  "presets": [
+    "react",
+    "env"
+  ],
+  "plugins": [
+    ["module-resolver", {
+      "root": ".",
+      "alias": {
+        "~": "./src"
+      }
+    }],
+    "react-require",
+    "transform-object-rest-spread",
+    "babel-plugin-styled-components",
+    "react-hot-loader/babel"
+  ],
+  "env": {
+    "development": {
+      "plugins": [
+        "transform-react-jsx-self",
+        "transform-react-jsx-source"
+      ]
+    },
+    "production": {
+      "presets": [ "react-optimize" ]
+    }
+  }
+}
