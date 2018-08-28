@@ -8,7 +8,7 @@ import williamsSonoma from '~/assets/images/williams-sonoma.png'
 export default styled.div`
 
   .grid {
-    padding: 40px 10px;
+    padding: 40px 10px 0px 10px;
 
     &:after {
       content: "";
@@ -29,9 +29,9 @@ export default styled.div`
         display: block;
         width: 100%;
         padding-bottom: 61.81%;
-        border: 1px solid #e9e9e9;
         background-repeat: no-repeat;
         background-position: center;
+        background-color: #fff;
       }
     }
 

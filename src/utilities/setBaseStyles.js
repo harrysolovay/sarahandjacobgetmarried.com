@@ -15,6 +15,7 @@ injectGlobal`
     font-size: 17px;
     line-height: 25.5px;
     font-weight: 300;
+    background-color: rgba(220, 20, 60, .5);
   }
 
   h1 {

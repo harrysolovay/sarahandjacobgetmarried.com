@@ -49,7 +49,7 @@ const ContactForm = ({
 
     <button
       type='submit'
-      children='send'
+      children={ isSubmitting ? 'sending...' : 'send'}
       disabled={ isSubmitting }
     />
     

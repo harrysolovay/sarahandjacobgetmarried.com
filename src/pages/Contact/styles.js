@@ -18,20 +18,24 @@ export default styled.div`
     width: 100%;
     max-width: 100%;
     min-width: 100%;
-    border: 1px solid #bbb;
+    border: 1px solid rgba(0, 0, 0, .5);
     border-radius: 3px;
     &:focus {
       outline: none;
+      border: 1px solid #000;
     }
   }
 
   button {
     margin-top: 10px;
-    margin-bottom: 15px;
     padding: 10px 12px 11px 12px;
     border: 1px solid #3498db;
     color: #3498db;
     border-radius: 3px;
+  }
+
+  input, textarea, button {
+    background-color: rgba(255, 255, 255, .5);
   }
 
   h3 {

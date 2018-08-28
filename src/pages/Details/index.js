@@ -6,13 +6,52 @@ const Container = styled.div`
 
   header {
     padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #f6b9d8;
+
+    @media screen and (min-width: 900px) {
+      margin-top: 40px;
+      border-radius: 3px;
+    }
+
+    > div {
+      padding: 40px 0px 25px 0px;
+      display: flex;
+      flex: 1;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+
+      > div {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: 1px solid #e9e9e9;
+      }
+
+      img {
+        width: 30px;
+        height: 30px;
+        margin: 0px 25px;
+        @media screen and (min-width: 600px) {
+          margin: 0px 45px;
+        }
+      }
+
+    }
   }
   
   .details {
     display: flex;
+    background-color: #d7e5f3;
     flex: 1;
     flex-direction: column;
-    padding: 20px 10px 0px 10px;
+    padding: 20px 10px 30px 10px;
+
+    @media screen and (min-width: 900px) {
+      margin-top: 40px;
+      border-radius: 3px;
+    }
 
     @media screen and (min-width: 600px) {
       flex-direction: row;
@@ -24,7 +63,12 @@ const Container = styled.div`
       flex-direction: column;
     }
 
+    h4 {
+      margin-bottom: 0px;
+    }
+
     p {
+      margin-top: 0px;
       padding: 0px 10px;
       text-align: left;
       text-indent: 25px;
@@ -34,6 +78,12 @@ const Container = styled.div`
   .how-they-met {
     text-indent: 25px;
     padding: 20px 20px 40px 20px;
+    background-color: #bcacd0;
+
+    @media screen and (min-width: 900px) {
+      margin-top: 40px;
+      border-radius: 3px;
+    }
 
     p {
       text-align: left;
@@ -46,6 +96,11 @@ export default () =>
   <Layout>
     <Container>
       <header>
+        <div>
+          <div className='sarah' />
+          <img src={ require('~/assets/images/heart.png') } />
+          <div className='jacob' />
+        </div>
         <h1 children={ `Sarah & Jacob` } />
         <h3 children='...are getting married!' />
       </header>

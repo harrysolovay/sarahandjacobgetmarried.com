@@ -4,7 +4,7 @@ export default styled.nav`
 
   position: fixed;
   top: 0; right: 0; left: 0;
-  border-bottom: 1px solid #e9e9e9;
+  background-color: #fbe4ce;
 
   > div {
     height: 60px;
@@ -18,13 +18,16 @@ export default styled.nav`
     a {
       display: flex;
       align-items: center;
-      padding: 22px;
+      padding: 0px 10px 3px 10px;
+      color: #000;
+
+      @media screen and (min-width: 600px) {
+        padding: 0px 22px 3px 22px;
+      }
 
       &.active {
         font-weight: 600;
       }
     }
   }
-
-  background-color: #fff;
 `
