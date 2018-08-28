@@ -97,7 +97,7 @@ export default class Gallery extends Component {
 
       this.setState({
         thumbnails: images.map(({ src, width, height, }) => ({
-          src: `${ src }?w=400`,
+          src: `${ src }?w=600`,
           width, height,
         })),
         full: images
