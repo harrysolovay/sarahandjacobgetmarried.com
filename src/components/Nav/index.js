@@ -21,10 +21,14 @@ export default () =>
         children='Registry'
       />
 
-      <NavLink
-        to='/contact'
-        children='Contact'
-      />
+      {
+        /*
+          <NavLink
+            to='/contact'
+            children='Contact'
+          />
+        */
+      }
 
     </div>
   </Container>

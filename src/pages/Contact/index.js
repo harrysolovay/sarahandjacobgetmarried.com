@@ -2,6 +2,7 @@ import { Layout } from '~/components'
 import { withFormik, Form, Field } from 'formik'
 import * as Yup from 'yup'
 import Container from './styles'
+import { encodeFormData } from '~/utilities'
 
 const ContactForm = ({
   values,
@@ -72,10 +73,17 @@ const ContactFormWithFormik = withFormik({
 
   handleSubmit: (values, { resetForm, setSubmitting }) => {
     console.log(values, 'now submitting')
-    setTimeout(() => {
-      resetForm()
+    fetch('/', {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encodeFormData({ "form-name": "contact", ...this.state })
+    }).then((success) => {
+      console.log(success)
       setSubmitting(false)
-    }, 2000)
+      resetForm()
+    }).catch(error => {
+      console.error(error)
+    })
   },
 
 })(ContactForm)
