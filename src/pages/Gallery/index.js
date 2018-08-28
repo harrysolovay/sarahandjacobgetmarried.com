@@ -88,10 +88,9 @@ export default class Gallery extends Component {
       accessToken: '1f6fda85f9e6cd25f0cb6279d1fa09bbd2a605965255144c2543ce6aec44d6eb'
     })
     client.getAssets().then((response) => {
-      // console.log(response.items[0].fields.file.details.image)
       const images = response.items
         .map((item) => item.fields)
-        .map(({ file: { url: src, details: { image } }, caption }) => ({
+        .map(({ description: caption, file: { url: src, details: { image } } }) => ({
           src, caption, ...image
         }))
 
@@ -105,7 +104,7 @@ export default class Gallery extends Component {
             src, caption,
           })),
         loaded: true,
-      }, () => console.log(this.state))
+      })
     })
   }
 
