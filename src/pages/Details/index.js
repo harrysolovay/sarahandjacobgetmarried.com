@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Layout } from '~/components'
+import { Layout, ExternalLink } from '~/components'
 import { Link } from 'react-router-dom'
 
 const Container = styled.div`
@@ -98,7 +98,7 @@ export default () =>
       <header>
         <div>
           <div className='sarah' />
-          <img src={ require('~/assets/images/heart.png') } />
+          <img src={ require('~/assets/images/heart.png') } alt='heart' />
           <div className='jacob' />
         </div>
         <h1 children={ `Sarah & Jacob` } />
@@ -107,7 +107,7 @@ export default () =>
       <div className='details'>
         <div>
           <h4 children='reception & ceremony' />
-          <p>June 1st, 2019 (<a href='#' children='add to calendar' />) at Hilton City Ave., Philadelphia. The Ceremony and Reception will be held at the hotel on Saturday.</p>
+          <p>June 1st, 2019 (<ExternalLink href='#' children='add to calendar' />) at Hilton City Ave., Philadelphia. The Ceremony and Reception will be held at the hotel on Saturday.</p>
         </div>
         <div>
           <h4 children='what to do in Philly' />

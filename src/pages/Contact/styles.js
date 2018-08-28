@@ -13,6 +13,10 @@ export default styled.div`
     min-height: 200px;
   }
 
+  input, textarea, button {
+    background-color: rgba(255, 255, 255, .5);
+  }
+
   input, textarea {
     padding: 10px 12px 11px 12px;
     width: 100%;
@@ -32,10 +36,6 @@ export default styled.div`
     border: 1px solid #3498db;
     color: #3498db;
     border-radius: 3px;
-  }
-
-  input, textarea, button {
-    background-color: rgba(255, 255, 255, .5);
   }
 
   h3 {
