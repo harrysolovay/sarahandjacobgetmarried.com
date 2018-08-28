@@ -1,6 +1,7 @@
 import { Layout } from '~/components'
 import { withFormik, Form, Field } from 'formik'
 import * as Yup from 'yup'
+import Container from './styles'
 
 const ContactForm = ({
   values,
@@ -10,7 +11,7 @@ const ContactForm = ({
 }) =>
   <Form>
 
-    <div>
+    <div className='contact-group'>
       { touched.name && errors.name &&
         <span children={ errors.name } />
       }
@@ -22,7 +23,7 @@ const ContactForm = ({
       />
     </div>
 
-    <div>
+    <div className='contact-group'>
       { touched.email && errors.email &&
         <span children={ errors.email } />
       }
@@ -34,7 +35,7 @@ const ContactForm = ({
       />
     </div>
 
-    <div>
+    <div className='contact-group'>
       { touched.message && errors.message &&
         <span children={ errors.message } />
       }
@@ -81,8 +82,9 @@ const ContactFormWithFormik = withFormik({
 
 export default () =>
   <Layout>
-    <div>
+    <Container>
       <h1 children='Contact' />
+      <h3 children={ `what's up?` } />
       <ContactFormWithFormik />
-    </div>
+    </Container>
   </Layout>
