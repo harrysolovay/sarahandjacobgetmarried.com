@@ -15,7 +15,7 @@ const Container = styled.div`
     }
 
     > div {
-      padding: 40px 0px 25px 0px;
+      padding: 20px 0px 15px 0px;
       display: flex;
       flex: 1;
       flex-direction: row;
@@ -23,18 +23,26 @@ const Container = styled.div`
       align-items: center;
 
       > div {
-        width: 100px;
-        height: 100px;
+        width: 150px;
+        height: 150px;
         border-radius: 50%;
-        border: 1px solid #e9e9e9;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        &.sarah {
+          background-image: url(${ require('~/assets/images/sarah.png') })
+        }
+        &.jacob {
+          background-image: url(${ require('~/assets/images/jacob.png') })
+        }
       }
 
       img {
         width: 30px;
         height: 30px;
-        margin: 0px 25px;
+        margin: 0px;
         @media screen and (min-width: 600px) {
-          margin: 0px 45px;
+          margin: 0px 30px;
         }
       }
 

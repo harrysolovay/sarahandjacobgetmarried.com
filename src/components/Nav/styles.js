@@ -18,12 +18,8 @@ export default styled.nav`
     a {
       display: flex;
       align-items: center;
-      padding: 0px 10px 3px 10px;
+      padding: 0px 22px 3px 22px;
       color: #000;
-
-      @media screen and (min-width: 600px) {
-        padding: 0px 22px 3px 22px;
-      }
 
       &.active {
         font-weight: 600;
