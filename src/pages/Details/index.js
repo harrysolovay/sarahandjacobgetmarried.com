@@ -115,7 +115,7 @@ export default () =>
       <div className='details'>
         <div>
           <h4 children='reception & ceremony' />
-          <p>June 1st, 2019 (<ExternalLink href='#' children='add to calendar' />) at Hilton City Ave., Philadelphia. The Ceremony and Reception will be held at the hotel on Saturday.</p>
+          <p>June 1st, 2019 at Hilton City Ave., Philadelphia. The Ceremony and Reception will be held at the hotel on Saturday.</p>
         </div>
         <div>
           <h4 children='what to do in Philly' />
@@ -123,7 +123,7 @@ export default () =>
         </div>
         <div>
           <h4 children='hotel suggestions' />
-          <p>For hotel accomodations, we recommend making a reservation at the Hilton Philadelphia. <ExternalLink href='https://www.hilton.com/en/hi/groups/personalized/P/PHLPHHF-MOT-20190531/index.jhtml'>Click here</ExternalLink> to open the reservation site.</p>
+          <p>For hotel accomodations, we recommend making a reservation at the Hilton Philadelphia. Click <ExternalLink href='https://www.hilton.com/en/hi/groups/personalized/P/PHLPHHF-MOT-20190531/index.jhtml'>here</ExternalLink> to open the reservation site.</p>
         </div>
       </div>
       <div className='how-they-met'>
