@@ -123,7 +123,7 @@ export default () =>
         </div>
         <div>
           <h4 children='hotel suggestions' />
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p>For hotel accomodations, we recommend making a reservation at the Hilton Philadelphia. <ExternalLink href='https://www.hilton.com/en/hi/groups/personalized/P/PHLPHHF-MOT-20190531/index.jhtml'>Click here</ExternalLink> to open the reservation site.</p>
         </div>
       </div>
       <div className='how-they-met'>
